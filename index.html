@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Documentation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Documentation for Setting Up extention</h1>
+        <p>To get started with creating an extension on Fynd, set up your development environment by reviewing Fynd's API documentation and integration guidelines. These resources will help you understand essential endpoints, authentication, and data flows within the platform. Then, create a structured project that organizes code effectively, ensuring smooth functionality and user experience. Finally, follow best practices for testing and debugging to ensure your extension integrates seamlessly with Fynd.</p>
+    </header>
+
+    <main>
+
+        <h1>Online Web Setup / Becoming Partner</h1>
+
+        <section class="step">
+            <h2>Step 1: Register Yourself</h2>
+            <p class="explanation">
+                To get started, Register yourself as a fynd partner first
+            </p>
+            <div class="command">
+                <code>https://partner.fynd.com</code>
+            </div>
+        </section>
+
+        <section class="step">
+            <h2>Step 2: Verify Yourself</h2>
+            <p class="explanation">
+                Verify your phone number & email by providing OTPs
+            </p>
+            <!-- <div class="command">
+                <code>https://partner.fynd.com</code>
+            </div> -->
+        </section>
+
+        <section class="step">
+            <h2>Step 3: Create a Main Partner Company</h2>
+            <p class="explanation">
+                Create a partner company with all details asked like (name, mobile no, etc)
+            </p>
+            <!-- <div class="command">
+                <code>https://partner.fynd.com</code>
+            </div> -->
+        </section>
+
+        <section class="step">
+            <h2>Step 4: Create a Development Company</h2>
+            <p class="explanation">
+                Create a Development company as it will be required for pulling initial dummy data for your extension
+            </p>
+            <!-- <div class="command">
+                <code>https://partner.fynd.com</code>
+            </div> -->
+        </section>
+
+
+        <h1>PC Setup</h1>
+
+        <section class="step">
+            <p class="explanation">
+                To get started, you'll need the following:
+            </p>
+            <div class="command">
+                <code>Git for the starter code</code>
+                <code>Node.js 18+ for FDK CLI</code>
+                <code>Partner account ( refer above to create a partner account )</code>
+                <code>Development company ( refer above to create a development company )</code>
+            </div>
+        </section>
+
+        <section class="step">
+            <h2>Step 1: Install FDK CLI </h2>
+            <p class="explanation">
+                The FDK CLI simplifies theme and extension development using commands for creating, testing, and deploying projects. For more details, refer to the GitHub documentations.
+            </p>
+            <p class="ins">Run the following command in your terminal to install FDK CLI:
+            </p>
+            <div class="command">
+                <code>npm install -g @gofynd/fdk-cli</code>
+            </div>
+           
+        </section>
+
+        <!-- Step 1 -->
+        <section class="step">
+            <h2>Step 2: Login </h2>
+            <p class="explanation">
+                Run the following command to log into your Fynd Partner account:
+            </p>
+           
+            <div class="command">
+                <code>fdk login</code>
+            </div>
+            <p class="ins">To complete login go on the link provided and select a company and done</p>
+        </section>
+
+        <!-- Step 2 -->
+        <section class="step">
+            <h2>Step 3: Creating a new extension</h2>
+            <p class="explanation">
+                To create a new extension run the following command
+            </p>
+            <div class="command">
+                <code>fdk extension init</code>
+            </div>
+            <p class="ins">Fill up all the details asked</p>
+            <p class="ins">Enter Name</p>
+            <p class="ins">Select Type</p>
+            <p class="ins">Select the preffered tech stack ( the code for your extension will use this stack )</p>
+        </section>
+
+        <!-- Step 3 -->
+        <section class="step">
+            <h2>Step 4: Install Dependencies</h2>
+            <p class="explanation">
+                Install necessary dependencies for the project. In this example, we are using Node.js.
+            </p>
+            <div class="command">
+                <code>npm install express</code>
+            </div>
+        </section>
+
+        <section class="step">
+            <h2>Step 4: Populate Test Data</h2>
+            <p class="explanation">
+                Switch to your project directory
+            </p>
+            <div class="command">
+                <code>cd 'extension-name</code>
+            </div>
+            <p class="explanation">
+               Run the following command to get test data
+            </p>
+            <div class="command">
+                <code>fdk populate</code>
+            </div>
+            <p class="explanation">
+               Select the development compnay you want to use
+            </p>
+            
+        </section>
+
+        <section class="step">
+            <h2>Step 5: Preview Your Extension</h2>
+            <p class="explanation">
+                Run the following command:
+            </p>
+            <div class="command">
+                <code>fdk extension preview</code>
+            </div>
+            
+         
+        </section>
+
+        <section class="step">
+            <h2>Congrats!! you have made your first extension</h2>
+           
+        
+        </section>
+
+        <!-- Additional steps can be added in similar sections -->
+    </main>
+
+    <footer>
+        <p>Documentation by Random Person</p>
+    </footer>
+
+</body>
+</html>
